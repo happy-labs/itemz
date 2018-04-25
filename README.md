@@ -1,7 +1,6 @@
 # itemz
 
-itemz portal will save the items in mysql database. its capable to list and
-search the available itemz.
+itemz portal will save the items in mysql database. its capable to list and search the available itemz.
 
 # how to run
 
@@ -42,8 +41,7 @@ docker build --tag erangaeb/itemz:0.1 .
 
 ## 4. run itemz
 
-in here `${PWD}:/var/www/html` maps current working directory as a volumen to  
-`/var/www/html` directory. also taking mysql database host as a env variable
+in here `${PWD}:/var/www/html` maps current working directory as a volumen to `/var/www/html` directory. also taking mysql database host as a env variable
 
 ```
 docker run -p 81:80 \
