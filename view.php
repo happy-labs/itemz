@@ -4,70 +4,34 @@
    </head>
 
    <body>
-      <?php include 'dbz.php'; ?>
+    <?php include 'dbz.php';?>
       <?php
-         if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            $type = format_input($_POST["type"]);
-            $title = format_input($_POST["title"]);
-            $description = format_input($_POST["description"]);
-            $name = format_input($_POST["name"]);
-            $phone = format_input($_POST["phone"]);
-            $email = format_input($_POST["email"]);
-              $image = format_input($_POST["image"]);
+      echo "  <h2> Item View</h2>";
+      $sql = "SELECT type, title, description, name, phone, email, image FROM item";
 
-            // save itme db
-            mysqli_query($connect, "INSERT INTO item(type, title, description, name, phone, email, image)
-                VALUES('$type', '$title', '$description', '$name', '$phone', '$email','$image')");
-         }
+      $result = $connect->query($sql);
 
-         function format_input($data) {
-            $data = trim($data);
-            $data = stripslashes($data);
-            $data = htmlspecialchars($data);
-            return $data;
-         }
+      if ($result->num_rows > 0) {
+          // output data of each row
+          while($row = $result->fetch_assoc()) {
+
+              echo "<table>";
+              echo "<tr>";
+              echo "<td>Name</td>";
+              echo "<td>". $row["name"]."</td>";
+              echo "</tr>";
+              echo "</table>";
+           //   echo "<br> id: ". $row["title"]. " - Name: ". $row["image"]. "title " . $row["title"] . "<br>";
+          /*    echo "img src='".$row['image']."' width='175' height='200' />";*/
+              echo '<img width="100" height="100" src="data:image/jpeg;base64,'.base64_encode( $row['image'] ).'"/>';
+
+          }
+      } else
+      $conn->close();
       ?>
-
-      <h2>New Item</h2>
-      <form method = "post" action="<?=$_SERVER['PHP_SELF']?>">
-         <table>
-            <tr>
-               <td>Type:</td>
-               <td><label name = "type" value="test"></td>
-            </tr>
-        <!--    <tr>
-               <td>Title:</td>
-               <td><input type = "text" name = "title"></td>
-            </tr>
-            <tr>
-               <td>Description:</td>
-               <td><textarea name = "description" rows = "5" cols = "40"></textarea></td>
-            </tr>
-            <tr>
-               <td>Image(browse):</td>
-               <td> <input type="file" name="image"/></td>
-            </tr>
-            <tr>
-               <td>Name:</td>
-               <td><input type = "text" name = "name"></td>
-            </tr>
-            <tr>
-               <td>Phone:</td>
-               <td><input type = "text" name = "phone"></td>
-            </tr>
-            <tr>
-               <td>Email:</td>
-               <td><input type = "text" name = "email"></td>
-            </tr>
-            <tr>
-               <td>
-                  <input type = "submit" name = "submit" value = "Submit">
-               </td>
-            </tr>-->
-         </table>
-      </form>
-      <?php
-      ?>
+    <?php
+    ?>
+<br>
           <a href="index.php">Add New</a>
    </body>
 </html>

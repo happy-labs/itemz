@@ -13,7 +13,8 @@
             $name = format_input($_POST["name"]);
             $phone = format_input($_POST["phone"]);
             $email = format_input($_POST["email"]);
-              $image = format_input($_POST["image"]);
+            $image = addslashes(file_get_contents($_FILES['image']['tmp_name']));
+
 
             // save itme db
             mysqli_query($connect, "INSERT INTO item(type, title, description, name, phone, email, image)
