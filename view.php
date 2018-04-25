@@ -23,7 +23,7 @@
               echo "</table>";
            //   echo "<br> id: ". $row["title"]. " - Name: ". $row["image"]. "title " . $row["title"] . "<br>";
           /*    echo "img src='".$row['image']."' width='175' height='200' />";*/
-              echo '<img width="100" height="100" src="data:image/jpeg;base64,'.base64_encode( $row['image'] ).'"/>';
+              echo '<img width="100" height="100" src="data:image/jpeg;base64,'. $row['image'] .'"/>';
 
           }
       } else

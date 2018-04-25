@@ -13,7 +13,8 @@
             $name = format_input($_POST["name"]);
             $phone = format_input($_POST["phone"]);
             $email = format_input($_POST["email"]);
-            $image = addslashes(file_get_contents($_FILES['image']['tmp_name']));
+            $image = base64_encode(file_get_contents($_FILES['image']['tmp_name']));
+
 
 
             // save itme db
@@ -30,7 +31,7 @@
       ?>
 
       <h2>New Item</h2>
-      <form method = "post" action="<?=$_SERVER['PHP_SELF']?>">
+      <form method = "post" action="<?=$_SERVER['PHP_SELF']?>" enctype="multipart/form-data">
          <table>
             <tr>
                <td>Type:</td>

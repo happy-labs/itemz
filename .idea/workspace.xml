@@ -24,26 +24,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="view.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="33" column="4" lean-forward="false" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+            <state relative-caret-position="72">
+              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding>
-                <marker date="1524646753288" expanded="true" signature="162:230" ph="SELECT type,... item" />
+                <marker date="1524650234982" expanded="true" signature="162:230" ph="SELECT type,... item" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="162">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
-                <marker date="1524644513890" expanded="true" signature="636:800" ph="INSERT INTO item... " />
-                <marker date="1524644513890" expanded="true" signature="636:801" ph="INSERT INTO item... " />
+                <marker date="1524650305206" expanded="true" signature="640:804" ph="INSERT INTO item... " />
+                <marker date="1524650305206" expanded="true" signature="640:805" ph="INSERT INTO item... " />
+                <marker date="1524650305206" expanded="true" signature="1160:2255" ph="..." />
+                <marker date="1524650305206" expanded="true" signature="1177:1285" ph="..." />
+                <marker date="1524650305206" expanded="true" signature="1302:1412" ph="..." />
+                <marker date="1524650305206" expanded="true" signature="1429:1574" ph="..." />
+                <marker date="1524650305206" expanded="true" signature="1591:1707" ph="..." />
+                <marker date="1524650305206" expanded="true" signature="1724:1832" ph="..." />
+                <marker date="1524650305206" expanded="true" signature="1849:1959" ph="..." />
+                <marker date="1524650305206" expanded="true" signature="1976:2086" ph="..." />
+                <marker date="1524650305206" expanded="true" signature="2103:2237" ph="..." />
+                <marker date="1524650305206" expanded="true" signature="2123:2219" ph="..." />
               </folding>
             </state>
           </provider>
@@ -62,9 +72,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/getImage.php" />
         <option value="$PROJECT_DIR$/view.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -233,12 +243,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1524640747383</updated>
-      <workItem from="1524640755313" duration="5997000" />
+      <workItem from="1524640755313" duration="8367000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5997000" />
+    <option name="totallyTimeSpent" value="8367000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-2" width="1920" height="1082" extended-state="6" />
@@ -347,23 +357,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="72">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
-            <marker date="1524644513890" expanded="true" signature="636:800" ph="INSERT INTO item... " />
-            <marker date="1524644513890" expanded="true" signature="636:801" ph="INSERT INTO item... " />
+            <marker date="1524650234982" expanded="true" signature="162:230" ph="SELECT type,... item" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="33" column="4" lean-forward="false" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+        <state relative-caret-position="162">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <marker date="1524646753288" expanded="true" signature="162:230" ph="SELECT type,... item" />
+            <marker date="1524650305206" expanded="true" signature="640:804" ph="INSERT INTO item... " />
+            <marker date="1524650305206" expanded="true" signature="640:805" ph="INSERT INTO item... " />
+            <marker date="1524650305206" expanded="true" signature="1160:2255" ph="..." />
+            <marker date="1524650305206" expanded="true" signature="1177:1285" ph="..." />
+            <marker date="1524650305206" expanded="true" signature="1302:1412" ph="..." />
+            <marker date="1524650305206" expanded="true" signature="1429:1574" ph="..." />
+            <marker date="1524650305206" expanded="true" signature="1591:1707" ph="..." />
+            <marker date="1524650305206" expanded="true" signature="1724:1832" ph="..." />
+            <marker date="1524650305206" expanded="true" signature="1849:1959" ph="..." />
+            <marker date="1524650305206" expanded="true" signature="1976:2086" ph="..." />
+            <marker date="1524650305206" expanded="true" signature="2103:2237" ph="..." />
+            <marker date="1524650305206" expanded="true" signature="2123:2219" ph="..." />
           </folding>
         </state>
       </provider>
