@@ -33,9 +33,9 @@
          <table>
             <tr>
                <td>Type:</td>
-               <td><input type = "text" name = "type"></td>
+               <td><label name = "type" value="test"></td>
             </tr>
-            <tr>
+        <!--    <tr>
                <td>Title:</td>
                <td><input type = "text" name = "title"></td>
             </tr>
@@ -63,11 +63,11 @@
                <td>
                   <input type = "submit" name = "submit" value = "Submit">
                </td>
-            </tr>
+            </tr>-->
          </table>
       </form>
       <?php
       ?>
-      <a href="view.php">view</a>
+          <a href="index.php">Add New</a>
    </body>
 </html>
