@@ -49,3 +49,10 @@ docker run -p 81:80 \
  -v ${PWD}:/var/www/html \
  erangaeb/itemz:0.1
 ```
+
+## 5. browse itemz
+
+```
+localhost:81  
+<your local ip>:81  
+```
