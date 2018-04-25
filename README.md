@@ -8,13 +8,13 @@ search the available itemz.
 itemz portal running wiht mysql database(run mysql with docker). first need to
 create database and tables.
 
-## run mysql
+## 1. run mysql
 
 ```
 docker run -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 --name mysql -d mysql
 ```
 
-## setup mysql
+## 2. setup mysql
 
 ```
 create database itemz;
@@ -31,13 +31,13 @@ create table item (
 );
 ```
 
-## build itemz
+## 3. build itemz
 
 ```
 docker build --tag erangaeb/itemz:0.1 .
 ```
 
-## run itemz
+## 4. run itemz
 
 ```
 docker run -p 81:80 \
