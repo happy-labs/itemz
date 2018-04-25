@@ -43,5 +43,5 @@ docker build --tag erangaeb/itemz:0.1 .
 docker run -p 81:80 \
  -e DB_HOST=10.4.1.26 \
  -v ${PWD}:/var/www/html \
- erangaeb/petz:0.1
+ erangaeb/itemz:0.1
 ```
