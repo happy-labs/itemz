@@ -19,6 +19,8 @@ create database (`itemz`) and table(`item`)
 ```
 create database itemz;
 
+use itemz;
+
 create table item (
     id INT NOT NULL AUTO_INCREMENT,
     type VARCHAR(20),
