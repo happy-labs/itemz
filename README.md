@@ -26,7 +26,8 @@ create table item (
     type VARCHAR(20),
     title VARCHAR(20),
     description VARCHAR(100),
-    image blob, name VARCHAR(60),
+    image longblob,
+    name VARCHAR(60),
     phone VARCHAR(20),
     email VARCHAR(20),
     PRIMARY KEY(id)
