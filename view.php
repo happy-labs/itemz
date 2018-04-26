@@ -59,11 +59,12 @@ $result = $connect->query($sql);
 if ($result->num_rows > 0) {
     // output data of each row
     while ($row = $result->fetch_assoc()) {
-        echo "<table border='1px' id=\"myTable\" class=\"order-table table\">";
+
+        echo "<table   class=\"order-table table\">";
         echo "<tr>";
-        echo '<td><img width="100" height="100" src="data:image/jpeg;base64,' . $row['image'] . '"/></td>';
+        echo '<td ><table border=\'1px\' style="padding: 18px;"><tr><td><img width="100" height="100" src="data:image/jpeg;base64,' . $row['image'] . '"/></td></tr></table></td>';
         echo "<td>";
-        echo "<table border='1px'  >";
+        echo "<table  border='1px' >";
         echo "<tr>";
         echo "<td>Type</td><td> " . $row['type'] . "</td>";
         echo "</tr>";
