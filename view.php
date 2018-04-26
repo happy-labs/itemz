@@ -20,15 +20,10 @@ $result = $connect->query($sql);
 if ($result->num_rows > 0) {
     // output data of each row
     while ($row = $result->fetch_assoc()) {
-
-
         echo "<table border='1px'>";
         echo "<tr>";
-
         echo '<td><img width="100" height="100" src="data:image/jpeg;base64,' . $row['image'] . '"/></td>';
 
-
-        /*  echo "<td>Name</td>";*/
         echo "<td>";
         echo "<table border='1px'>";
         echo "<tr>";
@@ -50,20 +45,13 @@ if ($result->num_rows > 0) {
         echo "<td>Email</td><td> " . $row['email'] . "</td>";
         echo "</tr>";
         echo "<tr>";
-
-
         echo "</table >";
-
         echo "</td>";
         echo "</tr>";
         echo "</table>";
-
         echo "<br>";
         echo "<br>";
-
-
     }
-
 } else
     $conn->close();
 ?>
