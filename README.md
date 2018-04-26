@@ -26,7 +26,7 @@ create table item (
     type VARCHAR(20),
     title VARCHAR(20),
     description VARCHAR(100),
-    image longblob,
+    image LONGBLOB,
     name VARCHAR(60),
     phone VARCHAR(20),
     email VARCHAR(20),
