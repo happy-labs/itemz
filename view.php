@@ -61,7 +61,7 @@ if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
         echo "<table class=\"order-table table\">";
         echo "<tr>";
-        echo '<td><table border='1px' padding='18px;'><tr><td><img width="100" height="100" src="data:image/jpeg;base64,' . $row['image'] . '"/></td></tr></table></td>';
+        echo '<td><table border=\'1px\' style="padding: 18px;" ><tr><td><img width="100" height="100" src="data:image/jpeg;base64,' . $row['image'] . '"/></td></tr></table></td>';
         echo "<td>";
         echo "<table border='1px'  >";
         echo "<tr>";
