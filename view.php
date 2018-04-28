@@ -60,7 +60,7 @@ if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
         echo "<table class=\"order-table table\">";
         echo "<tr>";
-       /* echo '<td><table border=\'1px\' style="padding: 18px;" ><tr><td><img width="100" height="100" src="data:image/jpeg;base64,' . $row['image'] . '"/></td></tr></table></td>';*/
+        /* echo '<td><table border=\'1px\' style="padding: 18px;" ><tr><td><img width="100" height="100" src="data:image/jpeg;base64,' . $row['image'] . '"/></td></tr></table></td>';*/
         echo "<td>";
         echo "<table border='1px'  >";
         echo "<tr>";
@@ -82,11 +82,11 @@ if ($result->num_rows > 0) {
         echo "<td>Email</td><td> " . $row['email'] . "</td>";
         echo "</tr>";
 
-      echo "<tr>";
-        echo "<td><a href=\"viewImage.php?id=". $row['id'] ."\">view Image</a></td>";
+        echo "<tr>";
+        echo "<td><a href=\"viewImage.php?id=" . $row['id'] . "\">view Image</a></td>";
         echo "</tr>";
-        
-        
+
+
         echo "</table >";
         echo "</td>";
         echo "</tr>";
@@ -100,59 +100,59 @@ if ($result->num_rows > 0) {
 <?php
 ?>
 <br>
-<a href="http://www.muhammad.com/index.php?id=<?php echo $Result->ad_id();?>"><?php echo ucwords($Result->ad_title);?></a>
+<a href="http://www.muhammad.com/index.php?id=<?php echo $Result->ad_id(); ?>"><?php echo ucwords($Result->ad_title); ?></a>
 <a href="viewImage.php?id=<?php echo $row['id'] ?> ">view Image</a>
 <a href="index.php">Add New</a>
-    <?php include 'dbz.php'; ?>
-    <?php
-        echo "  <h2> Item View</h2>";
-        echo "	<input type=\"search\" class=\"light-table-filter\" data-table=\"order-table\" placeholder=\"Search\" width=\"150px\">";
+<?php include 'dbz.php'; ?>
+<?php
+echo "  <h2> Item View</h2>";
+echo "	<input type=\"search\" class=\"light-table-filter\" data-table=\"order-table\" placeholder=\"Search\" width=\"150px\">";
+echo "<br>";
+echo "<br>";
+
+// select itmes
+$sql = "SELECT type, title, description, name, phone, email, image FROM item";
+$result = $connect->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while ($row = $result->fetch_assoc()) {
+        echo "<table class=\"order-table table\">";
+        echo "<tr>";
+        echo '<td><table border=\'1px\' style="padding: 18px;" ><tr><td><img width="100" height="100" src="data:image/jpeg;base64,' . $row['image'] . '"/></td></tr></table></td>';
+        echo "<td>";
+        echo "<table border='1px'  >";
+        echo "<tr>";
+        echo "<td>Type</td><td> " . $row['type'] . "</td>";
+        echo "</tr>";
+        echo "<tr>";
+        echo "<td>Title</td><td> " . $row['title'] . "</td>";
+        echo "</tr>";
+        echo "<tr>";
+        echo "<td>Description</td><td> " . $row['description'] . "</td>";
+        echo "</tr>";
+        echo "<tr>";
+        echo "<td>Name</td><td> " . $row['name'] . "</td>";
+        echo "</tr>";
+        echo "<tr>";
+        echo "<td>Phone</td><td> " . $row['phone'] . "</td>";
+        echo "</tr>";
+        echo "<tr>";
+        echo "<td>Email</td><td> " . $row['email'] . "</td>";
+        echo "</tr>";
+        echo "<tr>";
+        echo "</table >";
+        echo "</td>";
+        echo "</tr>";
+        echo "</table>";
         echo "<br>";
         echo "<br>";
-
-        // select itmes
-        $sql = "SELECT type, title, description, name, phone, email, image FROM item";
-        $result = $connect->query($sql);
-
-        if ($result->num_rows > 0) {
-            // output data of each row
-            while ($row = $result->fetch_assoc()) {
-                echo "<table class=\"order-table table\">";
-                echo "<tr>";
-                echo '<td><table border=\'1px\' style="padding: 18px;" ><tr><td><img width="100" height="100" src="data:image/jpeg;base64,' . $row['image'] . '"/></td></tr></table></td>';
-                echo "<td>";
-                echo "<table border='1px'  >";
-                echo "<tr>";
-                echo "<td>Type</td><td> " . $row['type'] . "</td>";
-                echo "</tr>";
-                echo "<tr>";
-                echo "<td>Title</td><td> " . $row['title'] . "</td>";
-                echo "</tr>";
-                echo "<tr>";
-                echo "<td>Description</td><td> " . $row['description'] . "</td>";
-                echo "</tr>";
-                echo "<tr>";
-                echo "<td>Name</td><td> " . $row['name'] . "</td>";
-                echo "</tr>";
-                echo "<tr>";
-                echo "<td>Phone</td><td> " . $row['phone'] . "</td>";
-                echo "</tr>";
-                echo "<tr>";
-                echo "<td>Email</td><td> " . $row['email'] . "</td>";
-                echo "</tr>";
-                echo "<tr>";
-                echo "</table >";
-                echo "</td>";
-                echo "</tr>";
-                echo "</table>";
-                echo "<br>";
-                echo "<br>";
-            }
-        } else {
-            $conn->close();
-        }
-    ?>
-    <br>
-    <a href="index.php">Add New</a>
+    }
+} else {
+    $conn->close();
+}
+?>
+<br>
+<a href="index.php">Add New</a>
 </body>
 </html>
