@@ -13,10 +13,11 @@
         $phone = format_input($_POST["phone"]);
         $email = format_input($_POST["email"]);
         $image = base64_encode(file_get_contents($_FILES['image']['tmp_name']));
+        $address = format_input($_POST["address"]);
 
         // save in db
-        mysqli_query($connect, "INSERT INTO item(type, title, description, name, phone, email, image)
-                    VALUES('$type', '$title', '$description', '$name', '$phone', '$email','$image')");
+        mysqli_query($connect, "INSERT INTO item(type, title, description, name, phone, email, image, address)
+                    VALUES('$type', '$title', '$description', '$name', '$phone', '$email','$image', '$address')");
     }
 
     function format_input($data)
@@ -58,6 +59,10 @@
             <tr>
                 <td>Email:</td>
                 <td><input type="text" name="email"></td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td><textarea name="address" rows="3" cols="40"></textarea></td>
             </tr>
             <tr>
                 <td><input type="submit" name="submit" value="Submit"></td>

@@ -51,7 +51,7 @@
         echo "<br>";
 
         // select itmes
-        $sql = "SELECT type, title, description, name, phone, email, image FROM item";
+        $sql = "SELECT type, title, description, name, phone, email, image, address FROM item";
         $result = $connect->query($sql);
 
         if ($result->num_rows > 0) {
@@ -62,29 +62,41 @@
                 echo '<td><table border=\'1px\' style="padding: 18px;" ><tr><td><img width="100" height="100" src="data:image/jpeg;base64,' . $row['image'] . '"/></td></tr></table></td>';
                 echo "<td>";
                 echo "<table border='1px'  >";
+
                 echo "<tr>";
                 echo "<td>Type</td><td> " . $row['type'] . "</td>";
                 echo "</tr>";
+
                 echo "<tr>";
                 echo "<td>Title</td><td> " . $row['title'] . "</td>";
                 echo "</tr>";
+
                 echo "<tr>";
                 echo "<td>Description</td><td> " . $row['description'] . "</td>";
                 echo "</tr>";
+
                 echo "<tr>";
                 echo "<td>Name</td><td> " . $row['name'] . "</td>";
                 echo "</tr>";
+
                 echo "<tr>";
                 echo "<td>Phone</td><td> " . $row['phone'] . "</td>";
                 echo "</tr>";
+
                 echo "<tr>";
                 echo "<td>Email</td><td> " . $row['email'] . "</td>";
                 echo "</tr>";
+
+                echo "<tr>";
+                echo "<td>Address</td><td> " . $row['address'] . "</td>";
+                echo "</tr>";
+
                 echo "<tr>";
                 echo "</table >";
                 echo "</td>";
                 echo "</tr>";
                 echo "</table>";
+
                 echo "<br>";
                 echo "<br>";
             }
