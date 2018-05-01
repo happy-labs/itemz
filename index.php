@@ -34,7 +34,14 @@
         <table>
             <tr>
                 <td>Pet Type:</td>
-                <td><input type="text" name="type"></td>
+                <td>
+                    <select name="type">
+                        <option value="">Select type...</option>
+                        <option value="Dog">Dog</option>
+                        <option value="Cat">Cat</option>
+                        <option value="Bird">Bird</option>
+                    </select>
+                </td>
             </tr>
             <tr>
                 <td>Title:</td>
