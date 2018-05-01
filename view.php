@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>LIST ALL PETS</title>
+    <title>LIST PETS</title>
     <script>
         (function (document) {
             'use strict';
@@ -45,7 +45,7 @@
 <body>
     <?php include 'dbz.php'; ?>
     <?php
-        echo "  <h2> Item View</h2>";
+        echo "  <h2>LIST PETS</h2>";
         echo "	<input type=\"search\" class=\"light-table-filter\" data-table=\"order-table\" placeholder=\"Search\" width=\"150px\">";
         echo "<br>";
         echo "<br>";
