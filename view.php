@@ -104,8 +104,6 @@
                 echo "<br>";
                 echo "<br>";
             }
-        } else {
-            $conn->close();
         }
     ?>
     <br>
