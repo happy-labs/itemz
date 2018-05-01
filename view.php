@@ -51,7 +51,7 @@
         echo "<br>";
 
         // select itmes
-        $sql = "SELECT type, title, description, name, phone, email, image, address FROM item";
+        $sql = "SELECT type, title, description, name, phone, email, image, location, address FROM item";
         $result = $connect->query($sql);
 
         if ($result->num_rows > 0) {
@@ -85,6 +85,10 @@
 
                 echo "<tr>";
                 echo "<td>Email</td><td> " . $row['email'] . "</td>";
+                echo "</tr>";
+
+                echo "<tr>";
+                echo "<td>Location</td><td> " . $row['location'] . "</td>";
                 echo "</tr>";
 
                 echo "<tr>";

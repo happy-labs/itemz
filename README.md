@@ -30,6 +30,7 @@ create table item (
     name VARCHAR(60),
     phone VARCHAR(20),
     email VARCHAR(20),
+    location VARCHAR(20),
     address VARCHAR(100),
     PRIMARY KEY(id)
 );
