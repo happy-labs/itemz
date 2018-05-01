@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Add Item</title>
+    <title>ADD A PET</title>
 </head>
 <body>
     <?php include 'dbz.php'; ?>
@@ -29,11 +29,11 @@
     }
     ?>
 
-    <h2>New Item</h2>
+    <h2>Add A PET</h2>
     <form method="post" action="<?= $_SERVER['PHP_SELF'] ?>" enctype="multipart/form-data">
         <table>
             <tr>
-                <td>Type:</td>
+                <td>Pet Type:</td>
                 <td><input type="text" name="type"></td>
             </tr>
             <tr>

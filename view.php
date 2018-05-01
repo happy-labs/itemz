@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Add Item</title>
+    <title>LIST ALL PETS</title>
     <script>
         (function (document) {
             'use strict';
